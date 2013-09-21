@@ -1,0 +1,10 @@
+Git Settings
+    run setup_GitHg.sh
+    Go to github.com/setting/ssh and paste the key
+
+Hg settings
+    add .hgrc file to home directory
+    edit the .hgrc file :
+        [ui]
+        username = NAME <EMAIL>
+    $ hg push https://sctech@bitbucket.org/sctech/mobile/

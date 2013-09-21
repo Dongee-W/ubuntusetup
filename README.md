@@ -11,6 +11,10 @@ Scala Environment
 ```
 ./setup/setup_Scala.sh
 ```
+Git Setting
+```
+./setup/setup_GitHg.sh
+```
 
 
 
