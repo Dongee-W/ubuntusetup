@@ -1,0 +1,13 @@
+Install
+    --JDK, the Java Development Kit, version 1.6 or 1.7
+        run setup_Scala.sh
+    
+    --Sbt, a build tool for Scala, version 0.12.4
+        1. Download sbt from here: http://scalasbt.artifactoryonline.com/scalasbt/sbt-native-packages/org/scala-sbt/sbt/0.12.4/sbt.tgz
+        2. Unpack the archive to a directory of your choice
+        3. Add the bin/ directory to the PATH environment variable. Open the file ~/.bashrc in an editor (create it if it doesn’t exist) and add the following line export PATH=/PATH/TO/YOUR/sbt/bin:$PATH (export PATH=/home/sctech/Applications/sbt/bin:$PATH)
+        4. Open a new terminal to apply the changed .bashrc
+    
+    --The Scala IDE for Eclipse
+        1. You can download the Scala IDE for eclipse with the Scala Worksheet pre-installed from the following URL: http://typesafe.com/stack/scala_ide_download (Make sure to download the IDE for Scala version 2.10.2!)
+        2. After downloading the archive for your operating system, simply unpack it and start eclipse.
