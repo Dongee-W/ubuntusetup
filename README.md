@@ -5,16 +5,10 @@ LinuxSetup
 cd $HOME
 sudo apt-get install -y git-core
 git clone https://github.com/sctech/LinuxSetup.git
-./setup/setup.sh
+./LinuxSetup/setup.sh
 ```
-Scala Environment
-```
-./setup/setup_Scala.sh
-```
-Git Setting
-```
-./setup/setup_GitHg.sh
-```
+Scala_setup
 
+GitHg_setup
 
 

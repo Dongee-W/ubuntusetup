@@ -1,5 +1,11 @@
 Git Settings
-    run setup_GitHg.sh
+    $ git config --global user.name "sctech"
+    $ git config --global user.email "atfrontier@hotmail.com.tw"
+    $ git remote add origin git@github.com:sctech/myrepo.git
+        or
+    $ git remote add origin https://github.com/sctech/myrepo.git
+    $ ssh-keygen -t rsa -C "atfrontier@hotmail.com.tw"
+    $ cat ~/.ssh/id_rsa.pub
     Go to github.com/setting/ssh and paste the key
 
 Hg settings
@@ -7,4 +13,4 @@ Hg settings
     edit the .hgrc file :
         [ui]
         username = NAME <EMAIL>
-    $ hg push https://sctech@bitbucket.org/sctech/mobile/
+    $ hg push https://sctech@bitbucket.org/sctech/myrepo/
