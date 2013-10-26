@@ -7,7 +7,7 @@ sudo apt-get install -y git-core
 git clone https://github.com/sctech/ubuntusetup.git
 ./ubuntusetup/setup.sh
 ```
-vim setup
+###vim setup
 
 1. BACKUP your `.vim` directory and `.vimrc` first.(IMPORTANT!)
 
@@ -28,11 +28,26 @@ vim setup
 ```
 6. link the vimrc to
 ```
+
+        git clone git://github.com/sctech/vim.git
+```
+4. cd to `vim` directory and execute the `update.sh` to get latest version modules:
+```
+        cd vim
+        ./update.sh
+```
+5. make a symbolic link `.vim` to `vim` that you just cloned, or just rename it to `.vim` also be fine:
+```
+        ln -s vim .vim
+```
+6. link the vimrc to
+```
         ln -s .vim/vimrc .vimrc
 ```
 
-Scala_setup
+###Scala setup
+Read Scala_setup
 
-GitHg_setup
-
+###Git & Hg setup
+Read GitHg_setup
 
