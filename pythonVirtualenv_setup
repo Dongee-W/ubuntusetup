@@ -1,0 +1,38 @@
+Virtualenv
+``
+sudo apt-get install python3 python3-dev
+mkdir temp
+cd temp
+curl -O http://python-distribute.org/distribute_setup.py
+sudo python3 distribute_setup.py
+sudo easy_install pip
+cd ~
+rm -rf temp
+``
+在 `~/.bashrc` 加上下列語法：
+``
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+``
+儲存離開後，順便再在 bash 執行一次上述語法
+完成後
+``
+sudo pip install virtualenv
+sudo pip install virtualenvwrapper
+``
+在 `~/.bashrc` 加上：
+``
+export PIP_REQUIRE_VIRTUALENV=true
+export PIP_RESPECT_VIRTUALENV=true
+source /usr/local/bin/virtualenvwrapper.sh
+``
+儲存離開後
+``
+source /usr/local/bin/virtualenvwrapper.sh
+export WORKON_HOME=~/.virtualenvs
+``
+可以視狀況 決定是否在 /etc/sudoers 的 Defaults   env_reset 下方多加入
+``
+Defaults   env_keep += "PIP_REQUIRE_VIRTUALENV"
+Defaults   env_keep += "PIP_RESPECT_VIRTUALENV"
+``
+兩行`
